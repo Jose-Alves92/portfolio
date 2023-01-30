@@ -1,9 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({
     Key? key,
   }) : super(key: key);
+
+  _openWhatsApp() async {
+    var whatsAppUrl =
+        Uri.parse("https://wa.me/5562994629636?text=Olá,%20tudo%20bem?");
+    await launchUrl(whatsAppUrl);
+  }
+
+  _openLinkedin() async {
+    var linkedinUrl =
+        Uri.parse("https://www.linkedin.com/in/josealves92/");
+    await launchUrl(linkedinUrl);
+  }
+
+  _openGitHub() async {
+    var gitHubUrl =
+        Uri.parse("https://github.com/Jose-Alves92");
+    await launchUrl(gitHubUrl);
+  }
+//https://jose-alves-portfolio.web.app/assets/
+  _downloadCurriculum() async {
+    var path = Uri.file('assets/file/curriculum.pdf');
+    await launchUrl(path);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -40,33 +65,122 @@ class SideMenu extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                 ),
-                
               ],
             ),
           ),
           const Divider(),
-          const SizedBox(height: 20),
-          const Text('Skills:'),
-          const SizedBox(height: 20),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
-                Expanded(
-                  child: SkillsAnimation(label: 'Dart', percentage: 0.8),
-                ),
-                SizedBox(width: 20),
-                Expanded(
-                  child: SkillsAnimation(label: 'Flutter', percentage: 0.75),
-                ),
-                SizedBox(width: 20),
-                Expanded(
-                  child: SkillsAnimation(label: 'Firebase', percentage: 0.75),
-                ),
-              ],
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: const [
+                            Text('City:'),
+                            Text('Goiânia'),
+                          ],
+                        ),
+                        const SizedBox(height: 20),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: const [
+                            Text('Country:'),
+                            Text('Brasil'),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  const Divider(),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      children: [
+                        const Text('Skills:'),
+                        const SizedBox(height: 20),
+                        Row(
+                          //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: const [
+                            Expanded(
+                              child: SkillsAnimation(
+                                  label: 'Dart', percentage: 0.8),
+                            ),
+                            SizedBox(width: 20),
+                            Expanded(
+                              child: SkillsAnimation(
+                                  label: 'Flutter', percentage: 0.75),
+                            ),
+                            SizedBox(width: 20),
+                            Expanded(
+                              child: SkillsAnimation(
+                                  label: 'Firebase', percentage: 0.75),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  const Divider(),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      children: [
+                        const Text('Contato:'),
+                        const SizedBox(height: 20),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            IconButton(
+                              onPressed: _openWhatsApp,
+                              icon: SvgPicture.asset(
+                                'assets/icons/whatsapp.svg',
+                                color: Colors.white,
+                                semanticsLabel: 'WhatsApp',
+                              ),
+                            ),
+                            const SizedBox(width: 30),
+                            IconButton(
+                              onPressed: _openGitHub,
+                              icon: SvgPicture.asset(
+                                'assets/icons/github.svg',
+                                color: Colors.white,
+                                semanticsLabel: 'GitHub',
+                              ),
+                            ),
+                            const SizedBox(width: 30),
+                            IconButton(
+                              onPressed: _openLinkedin,
+                              icon: SvgPicture.asset(
+                                'assets/icons/linkedin.svg',
+                                color: Colors.white,
+                                semanticsLabel: 'Linkedin',
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 20),
+                        ElevatedButton(
+                          onPressed: _downloadCurriculum,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                              Text('CURRICULUM'),
+                              SizedBox(width: 10),
+                              Icon(Icons.download),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
-          )
+          ),
         ],
       ),
     );
