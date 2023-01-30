@@ -14,8 +14,9 @@ class MyProjects extends StatelessWidget {
       return const ProjectsGridView(crossAxisCount: 2, childAspectRatio: 2);
     } else if (Responsive().isMobile(context)) {
       return const ProjectsGridView(crossAxisCount: 1, childAspectRatio: 3);
+    } else {
+      return const ProjectsGridView(crossAxisCount: 1, childAspectRatio: 3);
     }
-    return null;
   }
 
   @override
@@ -27,11 +28,11 @@ class MyProjects extends StatelessWidget {
         children: [
           const SizedBox(height: 20),
           Responsive().isDesktop(context)
-          ? Text(
-            "My Projects",
-            style: Theme.of(context).textTheme.headline6,
-          )
-          : Container(),
+              ? Text(
+                  "My Projects",
+                  style: Theme.of(context).textTheme.headline6,
+                )
+              : Container(),
           const SizedBox(height: 20),
           _projectsGridView(context)!,
         ],
@@ -39,5 +40,3 @@ class MyProjects extends StatelessWidget {
     );
   }
 }
-
-

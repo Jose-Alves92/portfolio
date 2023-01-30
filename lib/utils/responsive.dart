@@ -9,8 +9,12 @@ class Responsive {
     bool isTable= MediaQuery.of(context).size.width < 1024 && MediaQuery.of(context).size.width >= 700;
     return isTable;
   }
+  bool isMobileLarge(BuildContext context) {
+    bool isMobile= MediaQuery.of(context).size.width < 700 && MediaQuery.of(context).size.width >= 500;
+    return isMobile;
+  }
   bool isMobile(BuildContext context) {
-    bool isMobile= MediaQuery.of(context).size.width < 700;
+    bool isMobile= MediaQuery.of(context).size.width < 500;
     return isMobile;
   }
 
