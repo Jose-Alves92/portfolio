@@ -1,3 +1,4 @@
+import 'dart:html' as html;
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -26,8 +27,7 @@ class SideMenu extends StatelessWidget {
   }
 //https://jose-alves-portfolio.web.app/assets/
   _downloadCurriculum() async {
-    var path = Uri.file('assets/file/curriculum.pdf');
-    await launchUrl(path);
+    html.window.open('assets/files/curriculum-jose-alves.pdf', 'PlaceholderName');
   }
 
   @override
@@ -107,17 +107,37 @@ class SideMenu extends StatelessWidget {
                           children: const [
                             Expanded(
                               child: SkillsAnimation(
-                                  label: 'Dart', percentage: 0.8),
+                                  label: 'Dart', percentage: 0.80),
                             ),
                             SizedBox(width: 20),
                             Expanded(
                               child: SkillsAnimation(
-                                  label: 'Flutter', percentage: 0.75),
+                                  label: 'Flutter', percentage: 0.70),
                             ),
                             SizedBox(width: 20),
                             Expanded(
                               child: SkillsAnimation(
-                                  label: 'Firebase', percentage: 0.75),
+                                  label: 'Firebase', percentage: 0.60),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 20),
+                        Row(
+                          //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: const [
+                            Expanded(
+                              child: SkillsAnimation(
+                                  label: 'HTML5', percentage: 0.50),
+                            ),
+                            SizedBox(width: 20),
+                            Expanded(
+                              child: SkillsAnimation(
+                                  label: 'CSS3', percentage: 0.30),
+                            ),
+                            SizedBox(width: 20),
+                            Expanded(
+                              child: SkillsAnimation(
+                                  label: 'Git/GitHub', percentage: 0.60),
                             ),
                           ],
                         ),
