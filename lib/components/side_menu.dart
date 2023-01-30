@@ -19,7 +19,7 @@ class SideMenu extends StatelessWidget {
                 const Spacer(),
                 const CircleAvatar(
                   radius: 60,
-                  backgroundImage: AssetImage('images/perfil.png'),
+                  backgroundImage: AssetImage("assets/images/perfil.png"),
                 ),
                 const Spacer(),
                 Text(
