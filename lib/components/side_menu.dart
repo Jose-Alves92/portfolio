@@ -26,10 +26,10 @@ class SideMenu extends StatelessWidget {
     await launchUrl(gitHubUrl);
   }
 //https://jose-alves-portfolio.web.app/assets/
-  _downloadCurriculum() async {
+  _downloadCurriculum() {
     var urlCV = 'assets/files/curriculum-jose-alves.pdf';
     AnchorElement anchorElement = AnchorElement(href: urlCV);
-    anchorElement.download = 'Curriculum José Alves';
+    anchorElement.download = 'Curriculum_Jose_Alves';
     anchorElement.click();
   }
 
