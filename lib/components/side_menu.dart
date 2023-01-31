@@ -1,4 +1,4 @@
-import 'dart:html';
+import 'dart:html' as html;
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -27,10 +27,11 @@ class SideMenu extends StatelessWidget {
   }
 //https://jose-alves-portfolio.web.app/assets/
   _downloadCurriculum() {
-    var urlCV = 'assets/files/curriculum-jose-alves.pdf';
-    AnchorElement anchorElement = AnchorElement(href: urlCV);
-    anchorElement.download = 'Curriculum_Jose_Alves';
-    anchorElement.click();
+    var urlCV = '/assets/files/curriculum-jose-alves.pdf';
+    // var anchorElement = html.AnchorElement(href: urlCV);
+    // anchorElement.download = 'Curriculum_Jose_Alves';
+    // anchorElement.click();
+    html.window.open(urlCV, 'Curriculum José');
   }
 
   @override
