@@ -21,7 +21,7 @@ class ButtonAppBar extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.white,
         side: const BorderSide(
-            color: Colors.black, strokeAlign: BorderSide.strokeAlignInside),
+            color: Colors.black),
       ),
       onPressed: onPressed,
       child: Text(
