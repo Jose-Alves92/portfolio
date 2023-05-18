@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/styles/app_colors.dart';
+import 'package:portfolio/core/utils/constants.dart';
 
 class PresentationPictureWidget extends StatelessWidget {
   const PresentationPictureWidget({Key? key}) : super(key: key);
@@ -24,7 +25,7 @@ class PresentationPictureWidget extends StatelessWidget {
       decoration: BoxDecoration(
         // color: Colors.teal,
         image: const DecorationImage(
-            image: AssetImage('assets/images/perfil.png'), fit: BoxFit.contain),
+            image: AssetImage(myPicture), fit: BoxFit.contain),
         shape: BoxShape.circle,
         border: Border.fromBorderSide(BorderSide(
             color: context.colors.primary, width: 5)),

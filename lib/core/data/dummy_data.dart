@@ -1,4 +1,5 @@
 import 'package:portfolio/app/models/project_model.dart';
+import 'package:portfolio/core/utils/screenshots.dart';
 
 class DummyData {
   static DummyData? _instance;
@@ -54,13 +55,7 @@ class DummyData {
         'website': '',
         'google-play': '',
       },
-      images: [
-        'https://github.com/Jose-Alves92/deliveryapp/blob/7189dedca2700ea95110068636cfd6858c6da72a/assets/readme/deliveryapp-image-01.png?raw=true',
-        'https://github.com/Jose-Alves92/deliveryapp/blob/7189dedca2700ea95110068636cfd6858c6da72a/assets/readme/deliveryapp-image-02.png?raw=true',
-        'https://github.com/Jose-Alves92/deliveryapp/blob/7189dedca2700ea95110068636cfd6858c6da72a/assets/readme/deliveryapp-image-03.png?raw=true',
-        'https://github.com/Jose-Alves92/deliveryapp/blob/7189dedca2700ea95110068636cfd6858c6da72a/assets/readme/deliveryapp-image-04.png?raw=true',
-        'https://github.com/Jose-Alves92/deliveryapp/blob/7189dedca2700ea95110068636cfd6858c6da72a/assets/readme/deliveryapp-image-05.png?raw=true',
-      ],
+      images: Screenshots.deliveryapp,
       isProjectMobile: true,
     ),
     Project(
@@ -72,11 +67,7 @@ class DummyData {
         'website': '',
         'google-play': 'https://google.com.br',
       },
-      images: [
-        'https://github.com/Jose-Alves92/expenses/blob/f88a4518d86291115e6d557dd0bcebe56c43620c/assets/readme/expenses-image-01.png?raw=true',
-        'https://github.com/Jose-Alves92/expenses/blob/f88a4518d86291115e6d557dd0bcebe56c43620c/assets/readme/expenses-image-02.png?raw=true',
-        'https://github.com/Jose-Alves92/expenses/blob/f88a4518d86291115e6d557dd0bcebe56c43620c/assets/readme/expenses-image-03.png?raw=true',
-      ],
+      images: Screenshots.expenses,
       isProjectMobile: true,
     ),
   ];

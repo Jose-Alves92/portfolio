@@ -16,7 +16,7 @@ class AboutMobile extends StatelessWidget {
       child: Column(
         children: [
            SvgPicture.asset(
-            'assets/images/coding.svg',
+            codingImage,
             width: size.width * .4 < 350 ? 350 : size.width * .4,
           ),
           const SizedBox(height: 20),

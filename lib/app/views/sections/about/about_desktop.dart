@@ -17,7 +17,7 @@ class AboutDesktop extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           SvgPicture.asset(
-            'assets/images/coding.svg',
+            codingImage,
             width: size.width * .4 > 500 ? 500 : size.width * .4,
           ),
           const AboutTextWidget(),

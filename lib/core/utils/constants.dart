@@ -7,5 +7,12 @@ const String curriculumUrl = 'https://drive.google.com/file/d/1jWuOr39ggypQbzYJJ
 const String whatsAppIcon = 'assets/icons/whatsapp.svg';
 const String linkedinIcon = 'assets/icons/linkedin.svg';
 const String githubIcon = 'assets/icons/github.svg';
+// Icons png
 
+// Images 
+const String myPicture = 'assets/images/myPicture.png';
+const String flutterImage = 'assets/images/flutter.png';
+const String programmingImage = 'assets/images/programming.png';
 
+// Images Svg
+const String codingImage = 'assets/images/coding.png';
