@@ -27,13 +27,13 @@ class AboutTextWidget extends StatelessWidget {
           Text('Sobre', style: context.textStyle.titleLarge),
           const SizedBox(height: 20),
           Text(
-            'É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação.',
+            'Olá, Meu nome é José Alves, tenho 30 anos e vivo em Aparecida de Goiânia-Go, sou graduado em Ciências Contábeis, e trabalhei por mais de cinco anos com contabilidade, mas no momento estou em busca de oportunidade para atuar com Desenvolvedor Mobile Júnior.',
             style: context.textStyle.bodySmall
                 .copyWith(fontWeight: FontWeight.normal),
           ),
           const SizedBox(height: 20),
           Text(
-            'Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens',
+            'E como muitos programadores gosto de tecnologia e sou fascinado em como ela pode nos ajudar e facilitar nossas vidas, vejo a programação como um combustível para expressar minha identidade criando tecnologias, ferramentas que podem ajudar outras pessoas.',
             style: context.textStyle.bodySmall
                 .copyWith(fontWeight: FontWeight.normal),
           ),
