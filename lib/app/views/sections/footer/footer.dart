@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:portfolio/core/utils/app_methods.dart';
 
 import '../../../../core/utils/constants.dart';
 
@@ -14,7 +15,7 @@ class Footer extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           TextButton(
-            onPressed: () {},
+            onPressed: () => openUrl(whatsAppUrl),
             child: SvgPicture.asset(
               whatsAppIcon,
               //height: 15,
@@ -23,7 +24,7 @@ class Footer extends StatelessWidget {
           ),
           const SizedBox(width: 5),
           TextButton(
-            onPressed: () {},
+            onPressed: () => openUrl(linkedinUrl),
             child: SvgPicture.asset(
               linkedinIcon,
               //height: 15,
@@ -32,7 +33,7 @@ class Footer extends StatelessWidget {
           ),
           const SizedBox(width: 5),
           TextButton(
-            onPressed: () {},
+            onPressed: () => openUrl(gitHubUrl),
             child: SvgPicture.asset(
               githubIcon,
               color: Colors.black,
@@ -42,7 +43,7 @@ class Footer extends StatelessWidget {
           ),
           const SizedBox(width: 5),
           TextButton(
-            onPressed: () {},
+            onPressed: () => openMail(emailUrl),
             child: const Icon(Icons.email, color: Colors.black)
           ),
           const SizedBox(width: 5),
