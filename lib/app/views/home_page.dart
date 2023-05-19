@@ -21,7 +21,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final keySectionHome = GlobalKey();
   final keySectionAbout = GlobalKey();
-  final keySectionProjectos = GlobalKey();
+  final keySectionProjects = GlobalKey();
   final keySectionSkills = GlobalKey();
   final scrollController = ScrollController();
 
@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
         break;
       case 3:
         renderBox =
-            keySectionProjectos.currentContext!.findRenderObject() as RenderBox;
+            keySectionProjects.currentContext!.findRenderObject() as RenderBox;
         break;
       case 4:
         renderBox =
@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
                 const Divider(color: Colors.black87),
                 About(key: keySectionAbout),
                 const Divider(color: Colors.black87),
-                Projects(key: keySectionProjectos),
+                Projects(key: keySectionProjects),
                 const Divider(color: Colors.black87),
                 Skills(key: keySectionSkills),
                 const Divider(color: Colors.black87),

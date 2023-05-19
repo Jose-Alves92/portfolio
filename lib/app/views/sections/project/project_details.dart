@@ -1,8 +1,8 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/styles/app_text_style.dart';
+import 'package:portfolio/core/utils/constants.dart';
 
-import '../../../../core/responsive/responsive.dart';
 import '../../../../core/utils/app_methods.dart';
 import '../../../models/project_model.dart';
 
@@ -17,7 +17,7 @@ class ProjectDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isMobile = Responsive.isMobile(context);
+    
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -28,8 +28,10 @@ class ProjectDetails extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('${project.title}',
-                      style: context.textStyle.titleMedium),
+                  Expanded(
+                    child: Text('${project.title}',
+                        style: context.textStyle.titleMedium, softWrap: true),
+                  ),
                   IconButton(
                       onPressed: () => Navigator.pop(context),
                       icon: const Icon(Icons.close)),
@@ -39,6 +41,7 @@ class ProjectDetails extends StatelessWidget {
               Text(
                 project.description!,
                 style: context.textStyle.bodySmall.copyWith(fontSize: 15),
+                softWrap: true,
               ),
               const SizedBox(height: 20),
               Wrap(
@@ -48,19 +51,19 @@ class ProjectDetails extends StatelessWidget {
                   if (project.urls['github']!.isNotEmpty)
                     InkWell(
                       onTap: () => openUrl(project.urls['github']!),
-                      child: Image.asset('assets/icons/github.png',
+                      child: Image.asset(gitHubImage,
                           width: 50, height: 50),
                     ),
                   if (project.urls['website']!.isNotEmpty)
                     InkWell(
                       onTap: () => openUrl(project.urls['website']!),
-                      child: Image.asset('assets/icons/website.png',
+                      child: Image.asset(webSiteIcon,
                           width: 50, height: 50),
                     ),
                   if (project.urls['google-play']!.isNotEmpty)
                     InkWell(
                       onTap: () => openUrl(project.urls['google-play']!),
-                      child: Image.asset('assets/icons/google-play-badge.png',
+                      child: Image.asset(googlePlayIcon,
                           width: 140),
                     ),
                   // if (project.urls.values.isNotEmpty) const SizedBox(),

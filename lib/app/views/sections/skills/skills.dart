@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/responsive/responsive.dart';
 import 'package:portfolio/core/styles/app_text_style.dart';
+import 'package:portfolio/core/utils/constants.dart';
 import 'widgets/skills_card_widget.dart';
 
 class Skills extends StatelessWidget {
@@ -29,13 +30,13 @@ class Skills extends StatelessWidget {
                   mainAxisSpacing: 20,
                 ),
                 children: const [
-                  SkillsCardWidget(path: 'assets/icons/flutter.png'),
-                  SkillsCardWidget(path: 'assets/icons/dart.png'),
-                  SkillsCardWidget(path: 'assets/icons/github.png'),
-                  SkillsCardWidget(path: 'assets/icons/javascript.png'),
-                  SkillsCardWidget(path: 'assets/icons/html.png'),
-                  SkillsCardWidget(path: 'assets/icons/css.png'),
-                  SkillsCardWidget(path: 'assets/icons/database.png')
+                  SkillsCardWidget(image: flutterImage),
+                  SkillsCardWidget(image: dartImage),
+                  SkillsCardWidget(image: gitHubImage),
+                  SkillsCardWidget(image: javascriptImage),
+                  SkillsCardWidget(image: htmlImage),
+                  SkillsCardWidget(image: cssImage),
+                  SkillsCardWidget(image: firebaseImage)
                 ],
               ),
             ),
@@ -45,28 +46,3 @@ class Skills extends StatelessWidget {
     );
   }
 }
-
-//  Row(
-//             mainAxisAlignment: MainAxisAlignment.center,
-//             children: const [
-//               SkillsCardWidget(path: 'assets/icons/flutter.png'),
-//               SizedBox(width: 20),
-//               SkillsCardWidget(path: 'assets/icons/dart.png'),
-//               SizedBox(width: 20),
-//               SkillsCardWidget(path: 'assets/icons/github.png'),
-//               SizedBox(width: 20),
-//               SkillsCardWidget(path: 'assets/icons/api.png')
-//             ],
-//           ),
-//           const SizedBox(height: 20),
-//           Row(
-//             mainAxisAlignment: MainAxisAlignment.center,
-//             children: const [
-//               SkillsCardWidget(path: 'assets/icons/javascript.png'),
-//               SizedBox(width: 20),
-//               SkillsCardWidget(path: 'assets/icons/html.png'),
-//               SizedBox(width: 20),
-//               SkillsCardWidget(path: 'assets/icons/css.png'),
-//               SizedBox(width: 20),
-//               SkillsCardWidget(path: 'assets/icons/database.png')
-//             ],),

@@ -35,7 +35,7 @@ class DummyData {
       isProjectMobile: false,
     ),
     Project(
-      title: "Shop E-commerce App - Flutter UI",
+      title: "Shop App - Flutter UI",
       description:
           "Shop é uma aplicação mobile construída durante o curso de Flutter, curso organizado pela COD3R. O aplicativo shop é um exemplo de e-commerce mobile com uma tela de registro e login do usuário com persistência por um período de tempo, o que significa que os usuários não precisam fazer login continuamente. No início do aplicativo existe uma grade de produtos, clique nela para ir para os detalhes e você poderá adicionar o produto aos seus favoritos ou adicionar ao carrinho para fazer o pedido. Tem a capacidade de acompanhar pedidos feitos e gerenciar produtos na loja.",
       urls: {
@@ -43,7 +43,7 @@ class DummyData {
         'website': '',
         'google-play': '',
       },
-      images: [],
+      images: Screenshots.shopApp,
       isProjectMobile: true,
     ),
     Project(

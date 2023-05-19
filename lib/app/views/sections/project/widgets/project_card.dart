@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 import 'package:portfolio/core/responsive/responsive.dart';
 import 'package:portfolio/core/styles/app_text_style.dart';
-import 'package:portfolio/core/utils/app_methods.dart';
 
 import '../../../../models/project_model.dart';
 import '../../../../widgets/custom_Elevated_Button.dart';

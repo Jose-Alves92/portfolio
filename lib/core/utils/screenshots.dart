@@ -17,4 +17,15 @@ class Screenshots {
     'https://firebasestorage.googleapis.com/v0/b/jose-alves-portfolio.appspot.com/o/Delivery%2Fdeliveryapp-image-04.png?alt=media&token=22e7076b-e0ba-4102-b68b-71b17d8682c4',
     'https://firebasestorage.googleapis.com/v0/b/jose-alves-portfolio.appspot.com/o/Delivery%2Fdeliveryapp-image-05.png?alt=media&token=7203312f-0a2c-4e24-b035-0e7b4c88e09c',
   ];
+
+  static List<String> shopApp = [
+    'https://firebasestorage.googleapis.com/v0/b/jose-alves-portfolio.appspot.com/o/Shop-E-commerce%2Fshop-e-commerce-01.jpg?alt=media&token=8c1740a1-e360-48f9-8edf-3e146cc0b114',
+    'https://firebasestorage.googleapis.com/v0/b/jose-alves-portfolio.appspot.com/o/Shop-E-commerce%2Fshop-e-commerce-02.jpg?alt=media&token=852d48bf-f0bd-4a0c-9b14-9427e57a7e44',
+    'https://firebasestorage.googleapis.com/v0/b/jose-alves-portfolio.appspot.com/o/Shop-E-commerce%2Fshop-e-commerce-03.jpg?alt=media&token=e97e9b6f-3489-45cf-b450-8d388e68a71a',
+    'https://firebasestorage.googleapis.com/v0/b/jose-alves-portfolio.appspot.com/o/Shop-E-commerce%2Fshop-e-commerce-04.jpg?alt=media&token=220bc4f7-5efb-41a4-834e-599bab393620',
+    'https://firebasestorage.googleapis.com/v0/b/jose-alves-portfolio.appspot.com/o/Shop-E-commerce%2Fshop-e-commerce-05.jpg?alt=media&token=ee7855f7-f40c-406f-97e5-6d1e5f402487',
+    'https://firebasestorage.googleapis.com/v0/b/jose-alves-portfolio.appspot.com/o/Shop-E-commerce%2Fshop-e-commerce-06.jpg?alt=media&token=38214be7-2c97-4f42-ae28-b7bb0193b265',
+    'https://firebasestorage.googleapis.com/v0/b/jose-alves-portfolio.appspot.com/o/Shop-E-commerce%2Fshop-e-commerce-07.jpg?alt=media&token=71c18281-c352-4681-90f0-7c4c56fcaceb',
+    'https://firebasestorage.googleapis.com/v0/b/jose-alves-portfolio.appspot.com/o/Shop-E-commerce%2Fshop-e-commerce-08.jpg?alt=media&token=fef42e55-87b1-4a8c-88d0-ab47403f50a5',
+  ];
 }

@@ -2,10 +2,13 @@
 import 'package:flutter/material.dart';
 
 class SkillsCardWidget extends StatelessWidget {
-  final String path;
+  final String image;
+  final double? height, width;
   const SkillsCardWidget({
     Key? key,
-    required this.path,
+    required this.image, 
+    this.height,
+    this.width,
   }) : super(key: key);
 
    @override
@@ -17,7 +20,7 @@ class SkillsCardWidget extends StatelessWidget {
           elevation: 5,
           child: Padding(
             padding: const EdgeInsets.all(10.0),
-            child: Image.asset(path),
+            child: Image.asset(image , width: width, height: height),
           ),
         ),
        );

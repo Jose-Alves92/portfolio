@@ -12,7 +12,7 @@ class About extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    
     return Responsive.isDesktop(context) ? const AboutDesktop() : const AboutMobile();
   }
 }
